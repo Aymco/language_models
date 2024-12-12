@@ -1,0 +1,14 @@
+
+language_model/data
+
+# all .zip, .pt
+*.zip
+*.npy
+# all /log
+/log/
+
+*.DS_Store
+
+
+# command to remove from git all files that are in .gitignore
+# git rm -r --cached .
