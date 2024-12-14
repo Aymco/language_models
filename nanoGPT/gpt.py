@@ -5,7 +5,7 @@ from torch.nn import functional as F
 # hyperparameters
 batch_size = 64 # how many independent sequences will we process in parallel?
 block_size = 256 # what is the maximum context length for predictions?
-max_iters = 100
+max_iters = 1000
 eval_interval = max_iters // 10 #500
 learning_rate = 3e-4
 eval_iters = 1 # 200 
@@ -21,6 +21,9 @@ if torch.cuda.is_available():
 elif hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
     device = "mps"
 
+# use mps float32 for better performance
+# torch.set_default_dtype(torch.float32)
+#torch.set_default_tensor_type(torch.float32)
 torch.manual_seed(1337)
 
 # wget https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt
