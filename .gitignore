@@ -4,10 +4,13 @@ language_model/data
 # all .zip, .pt
 *.zip
 *.npy
+*.pt
+
 # all /log
 /log/
 
 *.DS_Store
+/models
 
 
 # command to remove from git all files that are in .gitignore
