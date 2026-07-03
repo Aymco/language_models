@@ -1,0 +1,3 @@
+Having fun with LLM following [Andrej Karpathy tutorial series](https://youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&si=bjMjX13rBeAtUO8w)
+
+Learning about RNN and more ...
